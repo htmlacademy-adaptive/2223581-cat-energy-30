@@ -2,12 +2,61 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Кэт Энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <div class="main-header__logo logo">
+          <a class="main-header__logo">
+            <img class="logo__image" src="/source/images/logo.svg" width="70" height="59" alt="Логотип Cat Energy.">
+            <img class="logo__text" src="/source/images/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy текст.">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--current">
+                <a>
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a>
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a>
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="promo">
+        <div class="promo__container">
+        <div class="promo__content">
+        <h1 class="promo__title header-title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="promo__picture">
+        <img src="/source/images/index-can.png" width="552" height="499" alt="Питание для котов">
+        </div>
+        <button class="promo__button button button--base" type="button">Подобрать программу</button>
+        </div>
+        </section>
+        <section class="catalog">
+        </section>
+      </main>
   </body>
-</html>
+
+  </html>
+
