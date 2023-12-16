@@ -6,16 +6,30 @@
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/svg+xml" href="favicons/16.svg">
+  <link rel="icon" type="image/svg+xml" href="favicons/32.svg">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--inner">
+  <header class="page-header">
     <div class="page-header__container page-container">
       <div class="page-header__logo-container">
-        <a class="page-header__logo-image" href="index.html">
-          <img src="/source/images/logo.svg" width="70" height="59" alt="Логотип Cat Energy.">
-          <img src="/source/images/logo-text.svg" width="118" height="21" alt="Логотип Cat Energy текст.">
+        <a class="page-header__logo logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60"
+              height="50">
+            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38"
+              alt="Логотип интернет-магазина Cat Energy.">
+          </picture>
+          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <button class="page-header__nav-toggle page-header__nav-toggle--closed" type="button"><span
             class="visually-hidden">Открыть меню</span></button>
@@ -117,7 +131,7 @@
           <legend class="form-fieldset__title title-line title-line--form">Комментарий</legend>
           <div class="form-fieldset__container form-fieldset__container--comment">
             <label class="form-fieldset__field form-field"></label>
-            <textarea class="form-fieldset" name="cat-about"
+            <textarea class="form-fieldset_textarea" name="cat-about"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
@@ -174,13 +188,21 @@
       </div>
     </section>
     <div class="page-footer__map map">
-      <img src="#" width="100" height="100" alt="Карта Cat Energy">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)"
+          srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width: 768px)"
+          srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+        <img class="page-footer__map" src="images/map-mobile@1x.png"
+          srcset="images/map-mobile@1x.png 1x, images/map-mobile@2x.png 2x" width="320" height="362"
+          alt="Карта Cat Energy.">
+      </picture>
     </div>
     <section class="page-footer__reference reference">
       <h2 class="visually-hidden">Ссылки на соцсети и сайт разработчика.</h2>
       <div class="reference__container page-container">
         <a class="reference__logo-name" href="index.html">
-          <img src="/source/images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+          <img src="/source/images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </a>
         <ul class="reference__social social">
           <li class="social__item">
@@ -201,7 +223,7 @@
         </ul>
         <a class="reference__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <svg class="copyright__image" width="27" height="34"></svg>
+          <img class="copyright__logo" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </section>
