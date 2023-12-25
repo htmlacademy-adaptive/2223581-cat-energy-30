@@ -1,0 +1,16 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+// body {
+//   font-family: "Lato", sans-serif;
+//   font-size: 18px;
+//   line-height: 27px;
+//   background-color: tomato;
+// }
